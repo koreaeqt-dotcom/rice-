@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Object Classifier</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+</head>
+<body>
+    <div class="main-box">
+        <div class="left-box">
+            <h1>Teachable Machine Image Model</h1>
+            <div id="camera-box">
+                <div id="placeholder">
+                    <p>📷 Camera not connected</p>
+                </div>
+            </div>
+            <button id="start-btn" onclick="init()">Start Camera</button>
+        </div>
+
+        <div class="right-box">
+            <h2>Prediction Results</h2>
+            <div id="label-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
